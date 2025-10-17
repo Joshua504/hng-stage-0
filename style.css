@@ -1,0 +1,236 @@
+:root {
+	--bg-color: #cdd8e6;
+	--card-color: #ffffff;
+	--text-color: #1e1e1e;
+	--size-1: 24px;
+	--size-2: 16px;
+	--size-3: 14px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+	background-color: var(--bg-color);
+	display: grid;
+	place-content: center;
+	margin-top: 100px;
+}
+
+article {
+	max-width: 400px;
+	width: 400px;
+	height: fit-content;
+	background-color: var(--card-color);
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+.profile-info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.profile-info figure {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 3px solid var(--text-color);
+}
+
+figure > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.profile-detail h1 {
+	font-size: var(--size-1);
+	color: var(--text-color);
+	margin-bottom: 5px;
+}
+.profile-detail p {
+	font-size: var(--size-3);
+	color: var(--text-color);
+}
+
+.display-sec {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+
+.time-display {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.time-display .clock {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: var(--bg-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.time-display img {
+	width: 20px;
+	height: 20px;
+}
+
+.time-display p {
+	font-size: var(--size-2);
+	color: var(--text-color);
+	font-weight: 600;
+}
+
+.social-links {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.social-links .social-icons {
+	height: 30px;
+	width: 30px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.social-links .social-icons:hover {
+	background-color: var(--bg-color);
+}
+
+.social-links .social-icons > ion-icon {
+	width: 20px;
+	height: 20px;
+	color: var(--text-color);
+}
+
+.bio {
+	margin-bottom: 30px;
+}
+
+.bio p {
+	font-size: var(--size-3);
+	color: var(--text-color);
+}
+
+.bio p > span {
+	font-weight: 700;
+}
+
+.details-grid section {
+	margin-bottom: 20px;
+}
+
+.details-grid .sub-title {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.details-grid .sub-title h2 {
+	font-size: var(--size-2);
+	color: var(--text-color);
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.details-grid .sub-title .line {
+	width: 100%;
+	height: 1px;
+	background-color: var(--bg-color);
+}
+
+.details-grid section ul {
+	display: flex;
+	gap: 8px;
+	row-gap: 4px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.details-grid section ul li {
+	padding: 8px;
+	background-color: var(--bg-color);
+	border: 1px solid #a6b1c0;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+	color: var(--text-color);
+	font-size: var(--size-3);
+	font-weight: 600;
+	text-transform: capitalize;
+	border-radius: 4px;
+	transition: all 0.5 ease-in;
+}
+
+.details-grid section ul li:hover {
+	box-shadow: none;
+}
+
+.cta {
+	margin-top: 50px;
+	padding-top: 10px;
+	border-top: 1px solid var(--bg-color);
+	display: flex;
+	justify-content: end;
+}
+
+.cta > button {
+	padding: 10px;
+	font-size: var(--size-2);
+	font-weight: 600;
+	color: var(--card-color);
+	background-color: var(--text-color);
+	text-transform: capitalize;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.cta > button:hover {
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+	scale: 1.1;
+}
+
+/* --------------------------------- mobile --------------------------------- */
+@media (max-width: 767px) {
+	body {
+		margin-top: 50px;
+	}
+
+	article {
+		max-width: 400px;
+		width: 370px;
+	}
+}
+/* ----------------------------- xs-small-mobile ---------------------------- */
+@media (max-width: 375px) {
+	article {
+		width: 350px;
+		padding: 10px;
+	}
+}
+/* --------------------------------- tablet --------------------------------- */
+@media (768px < width <= 1024px) {
+	body {
+		margin-top: 50px;
+	}
+}

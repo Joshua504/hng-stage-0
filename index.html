@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>profile-card</title>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<article data-testid="test-profile-card">
+			<header>
+				<section class="profile-info">
+					<figure>
+						<img
+							src="./img/ChatGPT Image Oct 17, 2025, 03_07_21 AM.png"
+							alt="Profile picture of Bishop Josh"
+							data-testid="test-user-avatar" />
+					</figure>
+					<div class="profile-detail">
+						<h1 data-testid="test-user-name">Bishop Josh</h1>
+						<p>🇳🇬 Lagos, Nigeria</p>
+					</div>
+				</section>
+				<section class="display-sec">
+					<div class="time-display">
+						<div class="clock">
+							<img src="./img/clock-circle-svgrepo-com.svg" alt="clock-icon" />
+						</div>
+						<p class="time" data-testid="test-user-time"></p>
+					</div>
+					<ul class="social-links" data-testid="test-user-social-links">
+						<li>
+							<a
+								class="social-icons"
+								href="https://twitter.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								data-testid="test-user-social-twitter"
+								><ion-icon name="logo-twitter"></ion-icon
+							></a>
+						</li>
+						<li>
+							<a
+								class="social-icons"
+								href="https://github.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								data-testid="test-user-social-github"
+								><ion-icon name="logo-github"></ion-icon
+							></a>
+						</li>
+						<li>
+							<a
+								class="social-icons"
+								href="https://linkedin.com/in/alexjohnson"
+								target="_blank"
+								rel="noopener noreferrer"
+								data-testid="test-user-social-linkedin"
+								><ion-icon name="logo-linkedin"></ion-icon
+							></a>
+						</li>
+					</ul>
+				</section>
+				<div class="bio">
+					<p data-testid="test-user-bio">
+						Hi, I am Bishop Josh. A passionate
+						<span>Frontend Developer</span> and
+						<span>Open-source Enthusiast</span> with a love for creating elegant
+						solutions to complex problems.
+					</p>
+				</div>
+			</header>
+
+			<div class="details-grid">
+				<section>
+					<div class="sub-title">
+						<h2>Skills</h2>
+						<div class="line"></div>
+					</div>
+					<ul>
+						<li>react</li>
+						<li>vue</li>
+						<li>javaScript</li>
+						<li>html</li>
+						<li>css</li>
+						<li>tailwind</li>
+						<li>scss</li>
+					</ul>
+				</section>
+
+				<section>
+					<div class="sub-title">
+						<h2>Hobbies</h2>
+						<div class="line"></div>
+					</div>
+					<ul data-testid="test-user-hobbies">
+						<li>binge anime</li>
+						<li>football</li>
+						<li>gaming</li>
+						<li>music</li>
+						<li>working out</li>
+						<li>reading manga and novels</li>
+					</ul>
+				</section>
+
+				<section>
+					<div class="sub-title">
+						<h2>Dislikes</h2>
+						<div class="line"></div>
+					</div>
+					<ul data-testid="test-user-dislikes">
+						<li>Cold coffee and lukewarm tea</li>
+						<li>basketball</li>
+						<li>Bugs</li>
+						<li>Unnecessary meetings</li>
+					</ul>
+				</section>
+
+				<div class="cta"><button>view more ...</button></div>
+			</div>
+		</article>
+	</body>
+</html>
