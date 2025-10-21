@@ -242,6 +242,9 @@ main {
 		height: fit-content;
 		width: fit-content;
 	}
+	nav ul li:hover {
+		background: var(--card-color);
+	}
 	nav ul li a {
 		gap: 0.5em;
 		font-size: var(--size-4);

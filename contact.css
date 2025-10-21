@@ -319,6 +319,10 @@ main {
 		height: 60px;
 		width: 100%;
 		border-radius: 0;
+		cursor: none;
+	}
+	nav ul li:hover {
+		background: var(--card-color);
 	}
 
 	nav ul li a {
